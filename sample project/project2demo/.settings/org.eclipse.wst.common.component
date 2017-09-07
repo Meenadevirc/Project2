@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="prjct2demo">
+    <wb-module deploy-name="project2demo">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="prjct2demo"/>
-        <property name="java-output-path" value="/prjct2demo/build/classes"/>
+        <property name="context-root" value="project2demo"/>
+        <property name="java-output-path" value="/project2demo/build/classes"/>
     </wb-module>
 </project-modules>
