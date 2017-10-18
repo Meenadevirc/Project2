@@ -1,0 +1,59 @@
+<link href="css/register.css"  rel="stylesheet" type="text/css"/>
+    
+<div class="container">
+<h2 align="center">Update Profile</h2>
+<span style="color:red">{{exception.message}}</span>
+<form>
+<div class="form-group">
+<b>Enter username </b>
+<input type="text" placeholder="Enter username" ng-model="user.username" class="form-control" style="width:300px;" disabled>
+<span style="color:red">{{duplicateUsername.message}}</span>
+</div>
+
+<div class="form-group">
+<b>Enter password</b>
+<input type="password" placeholder="Enter password" ng-model="user.password" class="form-control" style="width:300px;">
+</div>
+
+<div class="form-group">
+<b>Enter Firstname </b>
+<input type="text" placeholder="Enter firstname" ng-model="user.firstname" class="form-control" style="width:300px;">
+</div>
+
+<div class="form-group">
+<b>Enter lastname </b>
+<input type="text" placeholder="Enter lastname" ng-model="user.lastname" class="form-control" style="width:300px;">
+</div>
+
+<div class="form-group">
+<b>Enter email </b>
+<input type="email" placeholder="Enter email" ng-model="user.email" class="form-control" style="width:300px;">
+<span style="color:red">{{duplicateEmail.message}}</span>
+</div>
+
+<div class="form-group">
+<b>Enter phonenumber </b>
+<input type="text" placeholder="Enter phonenumber" ng-model="user.phonenumber" class="form-control" style="width:300px;">
+</div>
+
+<div class="form-group">
+<b>Select Role: </b>
+<br><br>
+<b>
+<input type="radio"  ng-model="user.role"  value="STUDENT">Student
+<input type="radio" ng-model="user.role" value="ALUMINI">Alumini
+<input type="radio" ng-model="user.role" value="EMPLOYEE">Employee
+</b>
+</div>
+<br>
+<div class="form-group">
+<input type="submit" ng-click="updateUser()" value="Update">
+</div>
+</form>
+</div>
+
+
+
+
+<span style="color:red">{{error.message}}</span>
+
